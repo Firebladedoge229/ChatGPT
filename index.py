@@ -1,7 +1,7 @@
 import random
 import requests
 from flask import Flask
-from flask import request
+from flask import request, Response
 
 app = Flask(__name__)
 
