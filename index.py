@@ -5,7 +5,7 @@ from flask import request
 
 app = Flask(__name__)
 
-@app.route("/ask", methods=["GET"])
+@app.route("/ask", methods=["POST"])
 def ask():
   data = request.json
   data["options"]["parentMessageId"] = random.randrange(1, 1000000)
